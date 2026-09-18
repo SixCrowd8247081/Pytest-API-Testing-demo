@@ -1,5 +1,5 @@
 # Pytest-API-Testing-demo
-This is my frist pytest project.
+This is a pytest example.
 #
 #
 #### Ref:
