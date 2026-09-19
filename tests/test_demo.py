@@ -14,17 +14,17 @@ class TestPytestDemo:
         assert response.json()['userId'] == 1
         assert response.json()['id'] == 1
 
-        def test_post_demo(self):
-            base_url = "https://jsonplaceholder.typicode.com"
-            requests_data = {
+    def test_post_demo(self):
+        base_url = "https://jsonplaceholder.typicode.com"
+        requests_data = {
                 'title': "foo",
                 'body': "bar",
                 'userId': 1
-            }
-            #发起请求
-            response = requests.post(f"{base_url}/posts", requests_data)
-            #断言
-            assert response.status_code == 201
-            print(response.json())
-            assert response.json()['userId'] == '1'
-            assert response.json()['id'] == 101
+        }
+        #发起请求
+        response = requests.post(f"{base_url}/posts", requests_data)
+        #断言
+        assert response.status_code == 201
+        print(response.json())
+        assert response.json()['userId'] == '1'
+        assert response.json()['id'] == 101
